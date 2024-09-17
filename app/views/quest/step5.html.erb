@@ -26,5 +26,18 @@
 </p>
 
  <!--Подходящее место для формы-->
-  
+  <%= form_tag('/final') do -%>
+
+     <div class='form-field'>
+        <%=label_tag 'number', 'Номер' %>
+       <%=text_field_tag 'answer[number]'%>
+     </div>
+     <div class='form-field'>
+       <%=label_tag 'color', 'Цвет' %>
+       <%=text_field_tag 'answer[color]'%>
+       </div>
+    <div class='form-field'>
+      <%= submit_tag 'Отправить' %>
+    </div>
+  <% end -%>
 </div>

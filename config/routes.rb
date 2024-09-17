@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   root 'quest#step1'
   get '/step2', to: 'quest#step2'
   post '/step3', to: 'quest#step3'
+  post '/step4', to: 'quest#step4'
+  get '/quest/step5', to: 'quest#step5'
   # Кто-то начал делать квест!
 end

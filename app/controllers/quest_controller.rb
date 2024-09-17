@@ -36,7 +36,7 @@ class QuestController < ApplicationController
   private
 
   def answer_params
-    params.require(:answer).permit(:number)
+    params.require(:answer).permit(:color, :number)
 
   end
 

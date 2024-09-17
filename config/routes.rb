@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'quest#step1'
   get '/step2', to: 'quest#step2'
-
+  post '/step3', to: 'quest#step3'
   # Кто-то начал делать квест!
 end

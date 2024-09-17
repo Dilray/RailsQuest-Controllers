@@ -29,7 +29,6 @@ class QuestController < ApplicationController
   def final
     redirect_to :deadend unless correct_final_answer?(version_params)
   end
-
   def deadend
 
   end
